@@ -16,20 +16,20 @@ public class CuadroColor : MonoBehaviour,IPointerDownHandler {
     public Sprite sprite_Rojo;
     public Sprite sprite_Amarillo;
 
-    private SpriteRenderer spriteRender;
+    public SpriteRenderer spriteRender;
     private int codigoColor;
     
     // Use this for initialization
 	void Start () {
-        codigoColor = UnityEngine.Random.Range(1, 4);
+        //codigoColor = UnityEngine.Random.Range(1, 4);
         spriteRender = GetComponent<SpriteRenderer>();        
-        AjusteColor(codigoColor);
+        //justeColor(codigoColor);
        
 
 
     }
 
-    private void AjusteColor(int codigoColor)
+    public void AjusteColor(int codigoColor)
     {
         switch (codigoColor)
         {
